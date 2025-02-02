@@ -9,8 +9,8 @@ class Telegram:
 ba1498a08d15f960be4c5db8ecca22ae"))
     BOT_TOKEN = str(env.get("7411719931:AAGNCwDf2p3ZoATNjUQjzNqgy-2O04fS8AI"))
     OWNER_ID = int(env.get('7202724594'))
-    WORKERS = int(env.get("WORKERS", "6"))  # 6 workers = 6 commands at once
-    DATABASE_URL = str(env.get('DATABASE_URL'))
+    WORKERS = int(env.get(" https://filetolink.ansh8012sxs.workers.dev", "6"))  # 6 workers = 6 commands at once
+    DATABASE_URL = str(env.get('mongodb+srv://ansh2122:ansh2122@cluster0.sj7k4.mongodb.net/'))
     UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "Telegram"))
     SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))
     FORCE_SUB_ID = env.get('FORCE_SUB_ID', None)
@@ -21,8 +21,8 @@ ba1498a08d15f960be4c5db8ecca22ae"))
     START_PIC = env.get('START_PIC', "https://graph.org/file/290af25276fa34fa8f0aa.jpg")
     VERIFY_PIC = env.get('VERIFY_PIC', "https://graph.org/file/736e21cc0efa4d8c2a0e4.jpg")
     MULTI_CLIENT = False
-    FLOG_CHANNEL = int(env.get("FLOG_CHANNEL", None))   # Logs channel for file logs
-    ULOG_CHANNEL = int(env.get("ULOG_CHANNEL", None))   # Logs channel for user logs
+    FLOG_CHANNEL = int(env.get("-1002315554542", None))   # Logs channel for file logs
+    ULOG_CHANNEL = int(env.get("-1002315554542", None))   # Logs channel for user logs
     MODE = env.get("MODE", "primary")
     SECONDARY = True if MODE.lower() == "secondary" else False
     AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "")).split()))
